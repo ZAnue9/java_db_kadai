@@ -31,8 +31,8 @@ public class Employees_Chapter04 {
                          );
                          """;
 
-            int rowCnt = statement.executeUpdate(sql);
-            System.out.println("テーブルを作成:rowCnt=" + rowCnt );
+            int employees = statement.executeUpdate(sql);
+            System.out.println("テーブルを作成:employees=" + employees );
         } catch(SQLException e) {
             System.out.println("エラー発生：" + e.getMessage());
         } finally {
